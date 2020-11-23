@@ -16,29 +16,32 @@
     <main class="container">
         <h1 class="py-5 text-center">Group Generator</h1>
         <div id="nameInputs">
-            <p>1. Type all the names. You can add more name fields by clicking 'Add' button. Click 'Remove last' to remove the last name field.</p>
+            <p>1. Type all the names. You can add more name fields by clicking 'Add' button. Click 'Remove last' to
+                remove the last name field.</p>
         </div>
         <button class="btn btn-primary" id="addName" onclick="createInput()">Add</button>
         <button class="btn btn-danger" id="addName" onclick="removeInput()">Remove last</button>
         <div class="py-4">
-            <p>2. Select an option: you can either say how many people in a group you want or how many groups. Put the quantity in the input field.</p>
-        <select name="options" id="options">
-            <option value="people">People in group</option>
-            <option value="groups">Number of groups</option>
-        </select>
-        <input type="text" id="quantity" placeholder="How many?">
-    </div>
-    <div>
-        <p>3. Get your groups!</p>
-        <button class="btn btn-success" id="run" onclick="generateGroups()">Generate groups</button>
-    </div>
-        <div class="mx-auto py-5" id="results"></div>
+            <p>2. Select an option: you can either say how many people in a group you want or how many groups. Put the
+                quantity in the input field.</p>
+            <select name="options" id="options">
+                <option value="people">People in group</option>
+                <option value="groups">Number of groups</option>
+            </select>
+            <input type="text" id="quantity" placeholder="How many?">
+        </div>
+        <div>
+            <p>3. Get your groups!</p>
+            <button class="btn btn-success" id="run" onclick="generateGroups()">Generate groups</button>
+        </div>
+        <div class="mx-auto py-5 mb-5" id="results"></div>
     </main>
 
     <footer class="footer fixed-bottom bg-light">
         <div class="container py-4">
-        <span>Alicja Malinowska</span>
-        <a class="float-right" href="https://github.com/Alicja-Malinowska/Group-Generator" target="_blank"><i class="fab fa-github fa-3x pr-2 pb-3"></i>Code</a>
+            <span>Alicja Malinowska</span>
+            <a class="float-right" href="https://github.com/Alicja-Malinowska/Group-Generator" target="_blank"><i
+                    class="fab fa-github fa-3x pr-2 pb-3"></i>Code</a>
         </div>
     </footer>
 
