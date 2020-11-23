@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <script src="https://randojs.com/2.0.0.js"></script>
+    <title>Groups generator</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="py-5 text-center">Group Generator</h1>
+        <div id="nameInputs">
+            <p>1. Type all the names. You can add more name fields by clicking 'Add' button. Click 'Remove last' to remove the last name field.</p>
+        </div>
+        <button class="btn btn-primary" id="addName" onclick="createInput()">Add</button>
+        <button class="btn btn-danger" id="addName" onclick="removeInput()">Remove last</button>
+        <div class="py-4">
+            <p>2. Select an option: you can either say how many people in a group you want or how many groups. Put the quantity in the inout field.</p>
+        <select name="options" id="options">
+            <option value="people">People in group</option>
+            <option value="groups">Number of groups</option>
+        </select>
+        <input type="text" id="quantity" placeholder="How many?">
+    </div>
+    <div>
+        <p>3. Get your groups!</p>
+        <button class="btn btn-success" id="run" onclick="generateGroups()">Generate groups</button>
+    </div>
+        <div class="mx-auto py-5" id="results"></div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
